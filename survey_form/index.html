@@ -19,60 +19,89 @@
                 <p id="description" class="description text-center">This survey is Chrono Trigger, a game from SquareSoft</p>
             </header>
             
-            <div class="box3">
-                <div class="box2">
-                    <form id="survey-form" class="formbox">
-
-                        <label id="name-label" for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter your name" required> 
-
-                        <label id="email-label" for="email">Email</label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
-
-                        <label id="number-label" for="number">Age (Optional) </label>
-                        <input type="number" id="age" placeholder="Enter your age" name="age" min="1" max="130">
-
-                        <label id="dropdown-label" for="dropdown">Select your favorite Era</label>
-                        <select id="dropdown" name="dropdown">
-                            <option value="65,000,000 B.C.">65,000,000 B.C.</option> 
-                            <option value="12,000 B.C.">12,00 B.C.</option> 
-                            <option value="600 A.D.">600 A.D.</option> 
-                            <option value="1000 A.D.">1000 A.D.</option> 
-                            <option value="1999 A.D.">1999 A.D.</option> 
-                            <option value="2300 A.D.">2300 A.D.</option> 
-                            <option value="End of Time">End of Time</option> 
-                        </select>
-                        <div class="fieldsetbox">
-
-                        <fieldset>
-                            <label for="character">Select your favorite Character</label>
-                            <input type="radio" id="crono" name="character" value="crono">
-                            <label for="crono">Crono</label>
-                            <input type="radio" id="marle" name="character" value="marle">
-                            <label for="marle">Marle</label>
-                            <input type="radio" id="lucca" name="character" value="lucca">
-                            <label for="lucca">Lucca</label>
-                            <input type="radio" id="frog" name="character" value="frog">
-                            <label for="frog">Frog</label>
-                            <input type="radio" id="magus" name="character" value="magus">
-                            <label for="magus">Magus</label>
-                            <input type="radio" id="robo" name="character" value="robo">
-                            <label for="robo">Robo</label>
-                            <input type="radio" id="ayla" name="character" value="ayla">
-                            <label for="ayla">Ayla</label>
-                        </fieldset>
-                        </div>
-                    
-                        <br>
-                        
-                        <input id="submit" type="submit" value="Submit"> 
-
-
-                        
-
-                    </form>
+            <form id="survey-form">
+                <div class="form-set">
+                    <label id="name-label" for="name">Name</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Enter your name" 
+                        class="form-control"
+                        required
+                    /> 
                 </div>
-            </div>
+
+                <div class="form-set">
+                    <label id="email-label" for="email">Email</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="Enter your email" 
+                        class="form-control"
+                        required
+                    />
+                </div>
+
+                <div class="form-set">
+                    <label id="number-label" for="number">Age<span class="small-text">(optional)</span> </label>
+                    <input 
+                    type="number" 
+                    id="age" 
+                    placeholder="Enter your age" 
+                    class="form-control"
+                    name="age" 
+                    min="1" 
+                    max="130"
+                    />
+                </div>
+
+                <div class="form-set">
+                    <label id="dropdown-label" for="dropdown">What is your favorite Era?</label>
+                    <select id="dropdown" name="dropdown" class="form-control" required>
+                        <option disabled selected value>Select an option</option>
+                        <option value="65,000,000 B.C.">65,000,000 B.C.</option> 
+                        <option value="12,000 B.C.">12,00 B.C.</option> 
+                        <option value="600 A.D.">600 A.D.</option> 
+                        <option value="1000 A.D.">1000 A.D.</option> 
+                        <option value="1999 A.D.">1999 A.D.</option> 
+                        <option value="2300 A.D.">2300 A.D.</option> 
+                        <option value="End of Time">End of Time</option> 
+                    </select>
+                </div>
+
+                <div class="form-set">
+                    <fieldset>
+                        <label for="character">What is your favorite Character?</label>
+                        <input type="radio" id="crono" name="character" value="crono" class="input-radio"/>
+                        <label for="crono" class="input-radio">Crono</label>
+                        <br>
+                        <input type="radio" id="marle" name="character" value="marle" class="input-radio"/>
+                        <label for="marle" class="input-radio">Marle</label>
+                        <br>
+                        <input type="radio" id="lucca" name="character" value="lucca" class="input-radio"/>
+                        <label for="lucca" class="input-radio">Lucca</label>
+                        <br>
+                        <input type="radio" id="frog" name="character" value="frog" class="input-radio"/>
+                        <label for="frog" class="input-radio">Frog</label>
+                        <br>
+                        <input type="radio" id="magus" name="character" value="magus" class="input-radio"/>
+                        <label for="magus" class="input-radio">Magus</label>
+                        <br>
+                        <input type="radio" id="robo" name="character" value="robo" class="input-radio"/>
+                        <label for="robo" class="input-radio">Robo</label>
+                        <br>
+                        <input type="radio" id="ayla" name="character" value="ayla" class="input-radio"/>
+                        <label for="ayla" class="input-radio">Ayla</label>
+                    </fieldset>
+                </div>
+            
+                
+                <div class="form-set">
+                    <input id="submit" type="submit" value="Submit"> 
+                </div>
+            </form>
         </div>
     </main>
 
