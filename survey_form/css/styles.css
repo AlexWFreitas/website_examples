@@ -1,47 +1,104 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box; 
+} /* respects the box size limits. */
+
 body {
-    font-family: Poppins;
+    font-family: Poppins, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: rgb(58, 58, 158);
     background-image: linear-gradient(
         115deg,
-        rgba(58, 58, 158, 0.5),
-        rgba(136, 136, 206, 0.4)
+        rgba(93, 93, 199, 0.5),
+        rgba(34, 34, 201, 0.4)
       ), url("../images/background.jpeg");
-    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.box1 {
-    color: white;
-    width: auto;
-    margin: 50px 0px 0px 0px;
-    padding: 0px 20px 0px 20px;
-
+.container {
+    width: 100%;
+    margin: 3.125rem auto 0 auto;
 }
 
-.box2 {
-    background-color: blue;
-    width: auto;
-    height: 20px;
 
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+  
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
 }
 
-.box3 {
-    background-color: green;
-    width: auto;
-    height: 20px;
-
+h1 {
+    font-weight: 400;
+    line-height: 1.15;
 }
 
-.box4 {
-    background-color: cyan;
-    width: auto;
-    height: 20px;
-
+p {
+    font-size: 1.125rem;
 }
 
-#flex-container {
+h1,
+p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.header {
+    margin-bottom: 1.8rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.description {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 2px 2px 2px rgba(48, 46, 46, 0.4);
+  }
+
+.formbox {
+    background-color:rgba(40, 40, 133, 0.87);
+    padding: 15px;
 }
