@@ -1,0 +1,60 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(235, 235, 235);
+    
+}
+
+body::before {
+    content: '';
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-color: hsl(200, 50%, 20%);
+}
+
+header {
+    display: flex;
+}
+
+main {
+    margin: 4rem auto;
+    width: 100%;
+    max-width: 40vw;
+    text-align: center;
+    background-color: red;
+}
+
+img {
+    display: block;
+    max-height: 80px;
+    width: auto;
+    margin: 0px auto 0px;
+}
+
+.header-logo {
+    flex-basis: 20%;
+}
+
+.header-items {
+    flex-basis: 80%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    align-items: center;
+}
+
+.header-items > div {
+    margin: 0px 5vw;
+}
+
