@@ -25,6 +25,20 @@ body::before {
 
 header {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    left: 25vw;
+    bottom: 0;
+    width: 50%;
+    min-height: 3vh;
+    background-color: hsl(200, 50%, 40%);
+    text-align: center;
 }
 
 main {
@@ -32,6 +46,11 @@ main {
     width: 100%;
     max-width: 40vw;
     text-align: center;
+}
+
+@media (min-width: 480px) {
+    main { max-width: 40vw;
+    }
 }
 
 img {
@@ -117,4 +136,28 @@ h3 {
     max-height: 100px;
     height: auto;
     width: auto;
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.footer-reverse-set {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-reverse-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 1.125rem;
+}
+
+.footer-bar > a {
+    margin-left: 0.625rem;
+    text-decoration: none;
+    color: white;
 }
