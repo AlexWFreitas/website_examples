@@ -12,11 +12,12 @@
 </head>
 
 <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <main>
         <div class="container">
             <header class="header">
                 <h1 id="title" class="text-center">Welcome to a Chrono Trigger Survey Form</h1>
-                <p id="description" class="description text-center">This survey is Chrono Trigger, a game from SquareSoft</p>
+                <p id="description" class="description text-center">This survey is about Chrono Trigger, a game from SquareSoft</p>
             </header>
             
             <form id="survey-form">
@@ -48,7 +49,7 @@
                     <label id="number-label" for="number">Age<span class="small-text">(optional)</span> </label>
                     <input 
                     type="number" 
-                    id="age" 
+                    id="number" 
                     placeholder="Enter your age" 
                     class="form-control"
                     name="age" 
@@ -73,28 +74,127 @@
 
                 <div class="form-set">
                     <fieldset>
-                        <label for="character">What is your favorite Character?</label>
-                        <input type="radio" id="crono" name="character" value="crono" class="input-radio"/>
-                        <label for="crono" class="input-radio">Crono</label>
-                        <br>
-                        <input type="radio" id="marle" name="character" value="marle" class="input-radio"/>
-                        <label for="marle" class="input-radio">Marle</label>
-                        <br>
-                        <input type="radio" id="lucca" name="character" value="lucca" class="input-radio"/>
-                        <label for="lucca" class="input-radio">Lucca</label>
-                        <br>
-                        <input type="radio" id="frog" name="character" value="frog" class="input-radio"/>
-                        <label for="frog" class="input-radio">Frog</label>
-                        <br>
-                        <input type="radio" id="magus" name="character" value="magus" class="input-radio"/>
-                        <label for="magus" class="input-radio">Magus</label>
-                        <br>
-                        <input type="radio" id="robo" name="character" value="robo" class="input-radio"/>
-                        <label for="robo" class="input-radio">Robo</label>
-                        <br>
-                        <input type="radio" id="ayla" name="character" value="ayla" class="input-radio"/>
-                        <label for="ayla" class="input-radio">Ayla</label>
+                        <legend>Who is your favorite Character?</legend>
+                        <div class="flex-radio">
+                            <input  type="radio" 
+                                id="crono" 
+                                name="character" 
+                                value="crono" 
+                                class="input-radio"/>
+                            <label for="crono" class="input-radio">Crono</label>
+                            <input  type="radio" 
+                                id="marle" 
+                                name="character" 
+                                value="marle" 
+                                class="input-radio"/>
+                            <label for="marle" class="input-radio">Marle</label>
+                            <input type="radio" 
+                                id="lucca" 
+                                name="character" 
+                                value="lucca" 
+                                class="input-radio"/>
+                            <label for="lucca" class="input-radio">Lucca</label>
+                            <input type="radio" 
+                                id="frog" 
+                                name="character" 
+                                value="frog" 
+                                class="input-radio"/>
+                            <label for="frog" class="input-radio">Frog</label>
+                            <div>
+                                <input type="radio" 
+                                    id="magus" 
+                                    name="character" 
+                                    value="magus" 
+                                    class="input-radio"/>
+                                <label for="magus" class="input-radio">Magus</label>
+                            </div>
+                            <input type="radio" 
+                                id="robo" 
+                                name="character" 
+                                value="robo" 
+                                class="input-radio"/>
+                            <label for="robo" class="input-radio">Robo</label>
+                            <input type="radio" 
+                                id="ayla" 
+                                name="character" 
+                                value="ayla" 
+                                class="input-radio"/>
+                            <label for="ayla" class="input-radio">Ayla</label>
+                        </div>
                     </fieldset>
+                </div>
+
+                <div class="form-set">
+                    <fieldset>
+                        <legend>What are the things you like in Chrono Trigger?</legend>
+                        <div>
+                            <label for="timetravel">
+                                <input 
+                                    type="checkbox" 
+                                    id="timetravel" 
+                                    name="multilike" 
+                                    value="timetravel"
+                                    class="input-checkbox"
+                                />
+                                Time Travel
+                            </label>
+                            <label for="music">
+                                <input 
+                                    type="checkbox" 
+                                    id="music" 
+                                    name="multilike" 
+                                    value="bike"
+                                    class="input-checkbox"
+                                />
+                                Music
+                            </label>
+                            <label for="character">
+                                <input 
+                                    type="checkbox" 
+                                    id="character" 
+                                    name="multilike" 
+                                    value="character"
+                                    class="input-checkbox"
+                                />
+                            Characters
+                            </label>
+                            <label for="combat">
+                                <input 
+                                    type="checkbox" 
+                                    id="combat" 
+                                    name="multilike" 
+                                    value="combat"
+                                    class="input-checkbox"
+                                />
+                            Combat System
+                            </label>
+                            <label for="story">
+                                <input 
+                                    type="checkbox" 
+                                    id="story" 
+                                    name="multilike" 
+                                    value="story"
+                                    class="input-checkbox"
+                                />
+                                Story
+                            </label>
+                            <label for="pixelart">
+                                <input 
+                                    type="checkbox" 
+                                    id="pixelart" 
+                                    name="multilike" 
+                                    value="pixelart"
+                                    class="input-checkbox"
+                                />
+                                Pixel Art
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="form-set">
+                    <p>Leave a message to us:</p>
+                    <textarea placeholder="Enter a message here..." name="messagebox" id="messageboxarea" class="input-textarea"/></textarea>
                 </div>
             
                 

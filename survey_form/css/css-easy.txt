@@ -1,8 +1,8 @@
-/* Importing Font */
-
 @import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
 
-/* Setting box-sizing */
+// Imports a font
+
+-------------------------
 
 *, 
 *::before, 
@@ -10,7 +10,8 @@
     box-sizing: border-box; 
 }
 
-/* Configuring Font / Text */
+// Sets everything on box-sizing: border-box so elements don't exceeds the border limits.
+
 
 body {
     font-family: Poppins, sans-serif;
@@ -21,7 +22,8 @@ body {
     margin: 0;
 }
 
-/* Configuring Background */
+// This code sets font css styling for the entire body
+
 
 body::before {
     content: '';
@@ -42,7 +44,9 @@ body::before {
     background-position: center;
 }
 
-/* Configuring Centered Container with Adaptable Width */
+// This code is responsible for setting the background color, image, transparency settings, how the image is displayed, if it repeats, 
+// how it is aligned and justified and how much should it cover and how it should be positioned.
+
 
 .container {
     width: 100%;
@@ -62,7 +66,10 @@ body::before {
     }
 }
 
-/* Text Settings for p and h1 */
+// This code uses margin x auto x auto to center the container horizontally.
+// It uses @media to adapt the container size accordingly to device resolutions.
+// The container will occupy the full width that has been assigned to it.
+
 
 h1 {
     font-weight: 400;
@@ -79,12 +86,16 @@ p {
     margin-bottom: 0.4rem;
 }
 
+// This code part is responsible for setting margins, font-size, weight and line height to h1, p elements.
+
 label {
     display: flex;
     align-items: center;
     font-size: 1.125rem;
     margin-bottom: 0.4rem;
 }
+
+// This code helps labels position the labels that are used over the form. While also standardizing the font-size accordingly to other elements.
 
 input,
 button,
@@ -96,17 +107,21 @@ textarea {
   line-height: inherit;
 }
 
+// Standardizing Font elements and margin over other types of elements.
+
 button {
     border: none;
 }
 
-/* form */
+// Code below is about Forms
 
 form {
     background-color:rgba(40, 40, 133, 0.87);
     padding: 2.5rem 0.625rem;
     border-radius: 0.25rem;
   }
+
+// This code gives background color to the form, adds padding and rounds the border through border-radius.
   
 @media (min-width: 480px) {
     form {
@@ -114,9 +129,13 @@ form {
     }
 }
 
+// Increases horizontal padding when width is above 480px.
+
 select:invalid {
     color: gray;
 }
+
+// This code gives invalid options on select dropdown the gray color.
 
 .input-radio,
 .input-checkbox {
@@ -124,14 +143,20 @@ select:invalid {
     margin-right: 0.625rem;
 }
 
+// This helps align elements inside each div as to contain checkbox/radio and text. While also adding a margin to give space from text.
+
 
 .header {
     margin-bottom: 1.8rem;
 }
 
+// Gives a margin at the bottom side to the header.
+
 .text-center {
     text-align: center;
 }
+
+// Aligns center, used on header.
 
 .small-text {
     font-size: 0.8rem;
@@ -140,16 +165,23 @@ select:invalid {
     color: white;
 }
 
+// Text used on parenthesis of certain labels
+
 .description {
     font-style: italic;
     font-weight: 200;
     text-shadow: 2px 2px 2px rgba(48, 46, 46, 0.4);
   }
 
+// Text used on the description on the header
+
 .form-set {
     margin: 0 auto 1rem;
     padding: 0rem;
 }
+
+// Sets centered horizontally centered margin for form sets. ( Label and Input )
+// Also gives 1rem margin at the bottom.
 
 .form-control {
     display: block;
@@ -162,11 +194,16 @@ select:invalid {
     border-radius: 0.25rem;
   }
 
+// Configures the area where you write text on <input text> elements, rounding the border, giving color, background color, 
+// background-clip style, height and other things.
+
 .flex-radio {
     display: flex;
     flex-wrap: wrap;
-
 }
+
+// Sets the display style to fill horizontally with wrapping at the end. Used on the input radio form-set so options filled the space horizontally.
+// and wrapped at the end of available space.
 
 .input-textarea {
     min-height: 100px;
@@ -174,3 +211,5 @@ select:invalid {
     resize: vertical;
     padding: 0.625rem;
 }
+
+// Configures textarea size.
