@@ -10,28 +10,80 @@
 
   <link rel="stylesheet" href="css/styles.css">
 
+
 </head>
 
 <body>
-  <header>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header id="header">
     <div class="header-logo">
-      <img src="images/logo.png" id="logoimg" alt="productlogo">
+      <img src="https://i.imgur.com/haXBSB4.png" id="header-img" alt="Cyberpunk 2077 Logo">
     </div>
     <div class="header-items">
-      <div>
-        Features
-      </div>
-      <div>
-        Gameplay
-      </div>
-      <div>
-        Versions
-      </div>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#gameplay" class="nav-link">Gameplay</a>
+        <a href="#versions" class="nav-link">Versions</a>
+      </nav>
     </div>
   </header>
   <main>
-    Título aqui
-    Descrição aqui
+    <div>
+      <h3>More bugs than Skyrim and Oblivion together!</h3>
+    </div>
+    <div>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              class="form-input"
+              required
+        />
+        <input type="submit"
+              id="submit"
+              value="Buy"
+              class="form-button"
+        />
+      </form>
+      <div class="skiplines">
+      </div>
+      <div id="features">
+        <div class="feature-set">
+          <div class="twenty-area">
+            <img src="images/image1.png" alt="Image of Hell" class="images">
+          </div>
+          <div class="eighty-area">
+            <h3>Development Hell</h3>
+            <p>Nein Years in Development Hell and unforgiving crunches!</p>
+          </div>
+        </div> 
+        <div class="feature-set">
+          <div class="twenty-area">
+            <img src="images/image2.png" alt="Image of Glitched Button" class="images">
+          </div>
+          <div class="eighty-area">
+            <h3>The Cyberpunk Experience</h3>
+            <p>This game is so weird and bugged that you can never be sure if whatever the fuck happened wasn't intended.</p>
+          </div>
+        </div> 
+        <div class="feature-set">
+          <div class="twenty-area">
+            <img src="images/image3.png" alt="Image of Speedrun Timer" class="images">
+          </div>
+          <div class="eighty-area">
+            <h3>Speedrun It and Get Your Money Back</h3>
+            <p>Our game is so bugged that you can ask for your money back if you have the skills to beat it fast enough. Can you do it, Samurai?</p>
+          </div>
+        </div> 
+      </div>
+      <div id="gameplay">
+
+      </div>
+      <div id="versions">
+
+      </div>
+    </div>
   </main>
 </body>
 </html>
