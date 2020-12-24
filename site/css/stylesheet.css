@@ -8,14 +8,16 @@ main {
     margin: auto;
     font-size: 36px; 
   }
-  
-  p {
+
+  figcaption {
+    margin-bottom: 0.625rem;
   }
   
   #image {
     display: block;
     width: 66%;
     margin: auto;
+    max-width: 100%;
   }
   
   #img-div {
