@@ -1,3 +1,3 @@
-This repository will contain websites I developed during my studies.
+Website with Hiroki Kikuta as a theme.
 
-Each website developed will have its own branch.
+Used basic HTML, Flexbox and CSS.
