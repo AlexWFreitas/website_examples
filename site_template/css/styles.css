@@ -56,6 +56,12 @@ header {
     background-color:hsl(200, 50%, 10%)
 }
 
+@media (max-width: 560px) {
+    header {
+        flex-direction: column;
+    }
+}
+
 .header-logo {
     width: 60vw;
 }
@@ -86,9 +92,17 @@ li > a {
 /* Main CSS */
 
 main {
-    max-width: 1000px;
+    max-width: 50vw;
     margin: 4rem auto;
     text-align: center;
+}
+
+@media (max-width: 560px) {
+    main {
+        max-width: 50vw;
+        margin: 4rem auto;
+        text-align: center;
+    }
 }
 
 /* Title + Email */
@@ -151,11 +165,18 @@ main {
     max-height: 125px;
 }
 
+@media (max-width: 560px) {
+    .twenty-area > img {
+        display: none;
+    }
+}
+
 .eighty-area {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: left;
     height: 125px;
     width: 80vw;
     padding: 5px;
@@ -163,8 +184,30 @@ main {
     margin-bottom: 30px;
 }
 
+.eighty-area > h3 {
+    width: 100%;
+}
+
+.eighty-area > p {
+    width: 100%;
+}
+
+@media (max-width: 560px) {
+    .eighty-area {
+        margin-bottom: 80px;
+    }
+}
+
 
 /* Video CSS - not needed */ 
+
+@media (max-width: 560px) {
+    #gameplay > iframe {
+        max-width: 50vw;
+        width: 100%;
+        height: auto;
+    }
+}
 
 /* Versions CSS */
 
@@ -174,6 +217,12 @@ main {
     flex-direction: row;
     justify-content: center;
     width: 1000px;
+}
+
+@media (max-width: 560px) {
+    #versions-container {
+        flex-direction: column;
+    }
 }
 
 .version {
