@@ -1,1 +1,1 @@
-This repository contains a barebone model of a index and css style to use on new projects for my studying practices.
+This repository contains an example of a product landing page based on freeCodeCamp example.
