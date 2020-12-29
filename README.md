@@ -1,1 +1,1 @@
-This repository contains a barebone model of a index and css style to use on new projects for my studying practices.
+This repository contains a Personal Portfolio website developed during freeCodeCamp's Responsive Web Design Certification.
