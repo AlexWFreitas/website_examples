@@ -1,4 +1,4 @@
-* {
+*, *::after, *::before {
     box-sizing: border-box;
 }
 
@@ -39,7 +39,12 @@ nav > a {
     font-size: 20px;
 }
 
-#intro {
+nav > img {
+    height: 50px;
+    width: auto;
+}
+
+#welcome-section {
     min-height: 100vh;
     height: 100vh;
     width: auto;
@@ -50,22 +55,22 @@ nav > a {
     align-items: center;
 }
 
-#intro > h3 {
+#welcome-section > h1 {
     font-size: 56px;
     font-weight: 800;
     margin: 0;
 }
 
-#intro > p {
+#welcome-section > p {
     font-size: 24px;
     font-weight: 400;
     color: rgb(255, 214, 34);
 }
 
-#work {
+#projects {
     background-image: linear-gradient(180deg, hsl(165, 50%, 10%), black);
     min-height: 100vh;
-    height: 100vh;
+    height: auto;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -89,7 +94,8 @@ nav > a {
     flex-wrap: wrap;
 }
 
-.work-grid-piece {
+
+.project-tile {
     height: 50%;
     width: 32%;
     margin: 10px;
@@ -125,6 +131,16 @@ nav > a {
     color: white;
 }
 
+@media (max-width: 570px) {
+    #work-container {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .project-tile {
+        width: 100vw;
+    }
+}
 
 #contact {
         background-image: linear-gradient(0deg, hsl(115, 50%, 10%), black);

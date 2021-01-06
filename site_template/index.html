@@ -14,26 +14,29 @@
 
 <body>
 
-<nav>
-  <a href="#intro">About</a> 
-  <a href="#work">Projects</a> 
-  <a href="#contact">Contact</a> 
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-</nav>
+<header id="header">
+  <nav id="navbar"> 
+    <a href="#welcome-section" class="nav-link">About</a> 
+    <a href="#work" class="nav-link">Projects</a> 
+    <a href="#contact" class="nav-link">Contact</a> 
+  </nav>
+</header>
 
 <main> 
-  <section id="intro">
-    <h3>Hi, I am Alex Wong</h3>
+  <section id="welcome-section">
+    <h1>Hi, I am Alex Wong</h1>
     <p>A developer</p>
   </section>
 
-  <section id="work">
+  <section id="projects">
     <div id="work-title">
       Projects I have worked on
     </div>
     
     <div id="work-container">
-      <div class="work-grid-piece">
+      <div class="project-tile">
         <div class="work-piece">
             <div>
               <img src="images/projeto1.png">
@@ -43,7 +46,7 @@
       </div>
 
 
-      <div class="work-grid-piece">
+      <div class="project-tile">
         <div class="work-piece">
           <div>
             <img src="images/projeto2.png">
@@ -52,7 +55,7 @@
         </div>
       </div>
 
-      <div class="work-grid-piece">
+      <div class="project-tile">
         <div class="work-piece">
           <div>
             <img src="images/projeto3.png">
@@ -72,8 +75,8 @@
         <a href="https://www.linkedin.com/in/alexwong1921/" target="_blank">LinkedIn</a>
       </div>
 
-      <div class="contact-piece">
-        <a href="https://github.com/AlexWongF" target="_blank">GitHub</a>
+      <div class="contact-piece" >
+        <a href="https://github.com/AlexWongF" target="_blank" id="profile-link">GitHub</a>
       </div>
       
       <div class="contact-piece">
